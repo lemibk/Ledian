@@ -1,3 +1,4 @@
+/* firstpage */
 .frist-section-contain {
   display: flex;
   flex-direction: row;
@@ -65,4 +66,20 @@
 .category-container {
   display: flex;
   justify-content: center;
+}
+
+/* kids */
+.childern ul li {
+  list-style: none;
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.childern a {
+  text-decoration: none;
+}
+
+.childern h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
 }

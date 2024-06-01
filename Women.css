@@ -1,3 +1,4 @@
+/* first page */
 .frist-section-contain {
   display: flex;
   flex-direction: row;
@@ -65,4 +66,22 @@
 .category-container {
   display: flex;
   justify-content: center;
+}
+
+/* women */
+
+.Women ul li {
+  text-decoration: none;
+  list-style: none;
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Women h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+
+.Women a {
+  text-decoration: none;
 }
