@@ -1,3 +1,4 @@
+/* first page  */
 .frist-section-contain {
   display: flex;
   flex-direction: row;
@@ -65,4 +66,21 @@
 .category-container {
   display: flex;
   justify-content: center;
+}
+
+/* men */
+
+.men ul li {
+  list-style: none;
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.men h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+
+.men a {
+  text-decoration: none;
 }
