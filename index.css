@@ -39,3 +39,30 @@
   width: 50px;
   height: 40px;
 }
+
+/* catagory */
+.category1 {
+  display: flex;
+  gap: 90px;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 20px;
+  border-radius: 30px;
+  background-color: rgb(235, 239, 221);
+  height: 40px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.category1 a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+.catdiv {
+  display: flex;
+  justify-content: center;
+}
