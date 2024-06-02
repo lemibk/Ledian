@@ -85,6 +85,11 @@
   width: 20%;
 }
 
+/* class for .productMarigin */
+.productMarigin {
+  border: 2px silver solid;
+}
+
 .small-row {
   display: flex;
   justify-content: flex-start;
