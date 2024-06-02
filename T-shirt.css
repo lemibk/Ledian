@@ -1,0 +1,54 @@
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: aqua;
+  width: 20%;
+}
+
+.img img {
+  width: 60%;
+  height: 5%;
+}
+
+.small-row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.small-col img {
+  width: 90%;
+  height: auto;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  width: 80%;
+}
+
+.description {
+  width: 30%;
+}
+
+.description h1,
+.description p {
+  margin: 10px 0;
+}
+
+.description input {
+  width: 10%;
+  height: 20%;
+  font-weight: 20;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+}
