@@ -24,6 +24,12 @@
   padding-right: 170px;
 }
 
+.circle img {
+  width: 130px;
+  height: 130px;
+  border-radius: 80px;
+}
+
 #icons img {
   width: 50px;
   height: 20px;
@@ -70,26 +76,30 @@
 
 /* women */
 
-.Women ul li {
-  text-decoration: none;
-  list-style: none;
-  font-size: medium;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.Women h1 {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 100;
-}
-
-.Women a {
-  text-decoration: none;
-}
-
 .tab {
   width: 80px;
   color: #000;
   background-color: #f9f6f6;
   border-radius: 5px;
   margin-bottom: 5px;
+}
+
+.circle {
+  margin-top: 110px;
+  margin-left: 100px;
+  width: 130px;
+  background-color: #000;
+  height: 130px;
+  border-radius: 90px;
+  text-align: center;
+}
+
+.Women {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+}
+
+#Women-select {
+  background-color: rgb(0, 136, 255);
 }
