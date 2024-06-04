@@ -1,0 +1,173 @@
+.frist-section-contain {
+  display: flex;
+  flex-direction: row;
+  gap: 30%;
+}
+
+.frist-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.frist-section li {
+  list-style: none;
+}
+
+.frist-section-contain a {
+  text-decoration: none;
+}
+
+.search {
+  padding-right: 170px;
+}
+
+.img img {
+  width: 150px;
+  height: 200px;
+}
+
+.small-col img {
+  width: 90%;
+  height: auto;
+  cursor: pointer;
+}
+
+#icons img {
+  width: 50px;
+  height: 20px;
+}
+
+#logo {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  top: 0%;
+}
+
+#logo img {
+  width: 50px;
+  height: 40px;
+}
+
+/* catagory */
+.category1 {
+  display: flex;
+  gap: 90px;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 20px;
+  border-radius: 30px;
+  background-color: rgb(235, 239, 221);
+  height: 40px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.category1 a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 15%;
+}
+
+/* class for .productMarigin */
+.productMarigin {
+  border: 2px silver solid;
+}
+
+.small-row {
+  display: flex;
+  justify-content: flex-start;
+  background-color: bisque;
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-left: 50px;
+  flex-wrap: wrap;
+}
+
+.description {
+  width: 20%;
+}
+
+.description h1,
+.description p {
+  margin: 10px 0;
+}
+
+.description input {
+  width: 10%;
+  height: 20%;
+  font-weight: 20;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* items in clothing  */
+
+.kidlist {
+  margin-top: 100px;
+}
+
+.main-list {
+  border-radius: 30px;
+  background-color: rgb(124, 129, 129);
+  width: 180px;
+  height: 40px;
+}
+
+.main-list a {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-top: 2px;
+}
+
+.kid {
+  display: flex;
+}
+
+/* specifuc item listing  */
+.tab {
+  width: 80px;
+  color: #000;
+  background-color: rgb(231, 222, 222);
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.specificlist ul {
+  list-style: none;
+}
+
+.specificlist ul li a {
+  text-decoration: none;
+}
