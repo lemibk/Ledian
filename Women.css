@@ -85,7 +85,7 @@
 }
 
 .circle {
-  margin-top: 110px;
+  margin-top: 90px;
   margin-left: 100px;
   width: 130px;
   background-color: #000;
@@ -102,4 +102,9 @@
 
 #Women-select {
   background-color: rgb(0, 136, 255);
+}
+
+.circle a {
+  text-decoration: none;
+  color: #000;
 }
