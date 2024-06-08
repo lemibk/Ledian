@@ -24,8 +24,10 @@
 }
 
 .img img {
-  width: 150px;
-  height: 200px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
 }
 
 .small-col img {
@@ -83,10 +85,8 @@
 }
 
 .product {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 15%;
+  flex: 1;
+  margin-right: 20px;
 }
 
 .small-row {
@@ -95,18 +95,33 @@
   background-color: bisque;
 }
 
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 20px;
+  width: 40%;
+}
+
 .main {
   display: flex;
-  align-items: flex-start;
-  margin-bottom: 50px;
-  margin-top: 30px;
-  margin-left: 30px;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 2%;
+  margin-bottom: 10px;
+  margin-top: 10px;
   width: 100%;
 }
 
 .description {
-  width: 20%;
+  flex: 2;
+}
+
+.description h4 {
+  margin-top: 20px;
 }
 
 .description h1,
@@ -123,11 +138,11 @@
 
 .btn {
   display: inline-block;
+  background-color: #66d369;
+  color: white;
   padding: 10px 20px;
-  background-color: #000;
-  color: #fff;
   text-decoration: none;
-  margin-top: 10px;
+  border-radius: 4px;
 }
 
 /* items in clothing  */
