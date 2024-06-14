@@ -181,3 +181,34 @@
   text-decoration: none;
   list-style: none;
 }
+
+@media (max-width: 767px) {
+  .main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding-left: 15px;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  /* class for .productMarigin */
+  .productMarigin {
+    width: auto;
+    border: 2px silver solid;
+  }
+
+  .small-row {
+    display: flex;
+    justify-content: flex-start;
+    background-color: bisque;
+    height: auto;
+    width: 150px;
+  }
+}
