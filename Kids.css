@@ -24,6 +24,19 @@
   padding-right: 170px;
 }
 
+.item img {
+  height: 300px;
+  width: 300px;
+  margin-top: 100px;
+  border-radius: 200px;
+}
+
+.listitems ul img {
+  width: 150px;
+  height: 150px;
+  border-radius: 200px;
+}
+
 #icons img {
   width: 50px;
   height: 20px;
@@ -69,17 +82,36 @@
 }
 
 /* kids */
-.childern ul li {
-  list-style: none;
-  font-size: medium;
-  font-family: 'Times New Roman', Times, serif;
+.item {
+  display: flex;
+  justify-content: space-around;
 }
 
-.childern a {
-  text-decoration: none;
-}
-
-.childern h1 {
-  font-family: 'Times New Roman', Times, serif;
+.listitems h1 {
   font-weight: 100;
+  font-size: large;
+}
+
+.main-list {
+  border-radius: 30px;
+  background-color: rgb(191, 200, 201);
+  width: 180px;
+  height: 40px;
+}
+
+.main-list a {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  text-decoration: none;
+  margin-left: 30px;
+  margin-top: 2px;
+}
+
+.kid {
+  display: flex;
+}
+
+.kidlist {
+  margin-top: 100px;
 }
