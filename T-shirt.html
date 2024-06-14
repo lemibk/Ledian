@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="T-shirt.css">
     <title>ledian</title>
     <script src="./index.js"></script>
+    <script src="./backend/selected.js"></script>
 </head>
 
 <body>
@@ -45,18 +46,24 @@
                             src="./icons/down-arrow.svg" alt=""></a></li>
                 <li class="tab"><a href="./womens-trousers.html">Trousers &nbsp; <img src="./icons/up-arrow.svg"
                             alt=""></a></li>
-                <li class="tab"><a href="./womens-jacket.html">Jacket &nbsp; &nbsp; &nbsp; <img src="./icons/up-arrow.svg" alt=""></a></li>
-                <li class="tab"><a href="./womens-skirt.html">skirt &nbsp; &nbsp; &nbsp; &nbsp; <img src="./icons/up-arrow.svg"
+                <li class="tab"><a href="./womens-jacket.html">Jacket &nbsp; &nbsp; &nbsp; <img
+                            src="./icons/up-arrow.svg" alt=""></a></li>
+                <li class="tab"><a href="./womens-skirt.html">skirt &nbsp; &nbsp; &nbsp; &nbsp; <img
+                            src="./icons/up-arrow.svg" alt=""></a></li>
+                <li class="tab"><a href="./womens-dress.html">dress &nbsp; &nbsp; &nbsp; <img src="./icons/up-arrow.svg"
                             alt=""></a></li>
-                <li class="tab"><a href="./womens-dress.html">dress &nbsp; &nbsp; &nbsp; <img src="./icons/up-arrow.svg" alt=""></a></li>
-                <li class="tab"><a href="#">Hijab &nbsp; &nbsp; &nbsp; <img src="./icons/up-arrow.svg" alt=""></a></li>
-                <li class="tab"><a href="#">Shoes &nbsp; &nbsp; &nbsp;<img src="./icons/up-arrow.svg" alt=""></a></li>
+                <li class="tab"><a href="./womens-hijab.html">Hijab &nbsp; &nbsp; &nbsp; <img src="./icons/up-arrow.svg"
+                            alt=""></a></li>
+                <li class="tab"><a href="./womens-shoes.html">Shoes &nbsp; &nbsp; &nbsp;<img src="./icons/up-arrow.svg"
+                            alt=""></a></li>
 
             </ul>
         </div>
+        
         <div>
+              <!--frist-->
             <div class="main">
-                
+
                 <div class="product">
                     <div class="img">
                         <img src="./image/t-shirt/Batwing black.jpg" alt="Batwing" id="main-image">
@@ -80,23 +87,38 @@
                     </div>
                 </div>
                 <div class="description">
-                    <h1>Batwing</h1>
+                    <form action="./backend/cart.php" method="post">
 
-                    <h5>125Birr</h5>
-                    <select>
-                        <option selected="selected">select size</option>
-                        <option>medium</option>
-                        <option>larg</option>
-                        <option>Small</option>
-                        <option>XL</option>
-                        <option>XXL</option>
-                    </select>
-                    <input type="number" value="1" width="2%">
-                    <a href="" class="btn">add to cart</a>
-                    <h4>Product descrition</h4>
-                    <p>Product describtion
-                        this is kdms,page 1<br>fHUsdfbYUWDaksmdjasiodfjklwea
-                    </p>
+                        <input type="hidden" value="women" name="category">
+                        <input type="hidden" value="Batwing" name="name" readonly size="50" class="txt"><h1>Batwing</h1>
+                        <input type="hidden" value="125Bir" name="price" readonly><h1>125 birr</h1>
+                        <label for="size">size</label>
+                        <select  name="size">
+                            <option selected="selected">medium</option>
+                           
+                            <option>large</option>
+                            <option>Small</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select> <br><br>
+                        <label for="color">select color</label>
+                        <select name="color">
+                            <option selected="selected">black</option>
+                            
+                            <option>medium grey</option>
+                            <option>grey</option>
+                            <option>greenish grey</option>
+                            <option>pink</option>
+                            <option>white</option>
+                            <option>yellow</option>
+                        </select><br> <br>
+                        <label for="num">Select quantity</label>
+                        <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
+                        <button class="btn" type="submit">add to cart</button>
+                    </form>
+
+
+
                 </div>
 
 
@@ -115,32 +137,43 @@
                         </div>
                         <div class="small-col"><img src="./image/t-shirt/Knitwear Crew Neck dark sky blue.jpg"
                                 alt="Knitwear" onclick="changeImage2(this.src)"></div>
-                        <div class="small-col"><img src="./image/t-shirt/Knitwear Crew Neck mintgreen.jpg" alt="Knitwear"
-                                onclick="changeImage2(this.src)"></div>
+                        <div class="small-col"><img src="./image/t-shirt/Knitwear Crew Neck mintgreen.jpg"
+                                alt="Knitwear" onclick="changeImage2(this.src)"></div>
                         <div class="small-col"><img src="./image/t-shirt/Knitwear Crew Neck pink.jpg" alt="Knitwear"
                                 onclick="changeImage2(this.src)"></div>
                     </div>
                 </div>
                 <div class="description">
-                    <h1>Knitwear</h1>
+                    <form action="./backend/cart.php" method="post">
 
-                    <h5>125Birr</h5>
-                    <select>
-                        <option selected="selected">select size</option>
-                        <option>medium</option>
-                        <option>larg</option>
-                        <option>Small</option>
-                        <option>XL</option>
-                        <option>XXL</option>
-                    </select>
-                    <input type="number" value="1" width="2%">
-                    <a href="" class="btn">add to cart</a>
-                    <h4>Product descrition</h4>
-                    <p>Product describtion
-                        this is kdms,page 2<br>fHUsdfbYUWDaksmdjasiodfjklwea
-                    </p>
-                </div>
-
+                        <input type="hidden" value="women" name="category">
+                        <input type="hidden" value="Knitwear" name="name" readonly size ><h1>Knitwear</h1>
+                        <input type="hidden" value="125Bir" name="price" readonly><h1>125 birr</h1>
+                        <label for="size">size</label>
+                        <select name="size">
+                            <option selected="selected">medium</option>
+                            
+                            <option>larg</option>
+                            <option>Small</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select> <br><br>
+                        <label for="color">Select color</label>
+                        <select name="color">
+                            <option selected="selected">black</option>
+                            
+                            
+                            <option>grey</option>
+                            <option>green</option>
+                            <option>pink</option>
+                           
+                        </select><br> <br>
+                        <label for="num">Select quantity</label>
+                        <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
+                        <button class="btn" type="submit">add to cart</button>
+                    </form>
+                   </div>
+                
                 <!--third-->
 
 
@@ -171,25 +204,37 @@
                     </div>
                 </div>
                 <div class="description">
-                    <h1>Long Sleeve Stretch Plain Round Scoop Crew Neck</h1>
+                    <form action="./backend/cart.php" method="post">
 
-                    <h5>125Birr</h5>
-                    <select>
-                        <option selected="selected">select size</option>
-                        <option>medium</option>
-                        <option>larg</option>
-                        <option>Small</option>
-                        <option>XL</option>
-                        <option>XXL</option>
-                    </select>
-                    <input type="number" value="1" width="2%">
-                    <a href="" class="btn">add to cart</a>
-                    <h4>Product descrition</h4>
-                    <p>Product describtion
-                        this is kdms,page 3<br>fHUsdfbYUWDaksmdjasiodfjklwea
-                    </p>
-                </div>
-            </div>
+                        <input type="hidden" value="women" name="category">
+                        <input type="hidden" value="Stretch Plain" name="name" readonly size ><h1>Stretch Plain</h1>
+                        <input type="hidden" value="125Bir" name="price" readonly><h1>125 birr</h1>
+                        <label for="size">size</label>
+                        <select name="size">
+                            <option selected="selected">medium</option>
+                            
+                            <option>larg</option>
+                            <option>Small</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select> <br><br>
+                        <label for="color">Select color</label>
+                        <select name="color">
+                            <option selected="selected">green</option>
+                            
+                            <option>white</option>
+                            <option>blue</option>
+                            <option>black</option>
+                            <option>brown</option>
+                           
+                        </select><br> <br>
+                        <label for="num">Select quantity</label>
+                        <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
+                        <button class="btn" type="submit">add to cart</button>
+                    </form>
+
+                   </div> 
+                </div> 
             <!--fourth-->
 
             <div class="main">
@@ -232,24 +277,40 @@
                     </div>
                 </div>
                 <div class="description">
-                    <h1>NECK TURTLE NECK PLAIN JUMPER TOP LONG SLEEVE</h1>
+                    <form action="./backend/cart.php" method="post">
 
-                    <h5>125Birr</h5>
-                    <select>
-                        <option selected="selected">select size</option>
-                        <option>medium</option>
-                        <option>larg</option>
-                        <option>Small</option>
-                        <option>XL</option>
-                        <option>XXL</option>
-                    </select>
-                    <input type="number" value="1" width="2%">
-                    <a href="" class="btn">add to cart</a>
-                    <h4>Product descrition</h4>
-                    <p>Product describtion
-                        this is kdms page 4 <br>fHUsdfbYUWDaksmdjasiodfjklwea
-                    </p>
-                </div>
+                        <input type="hidden" value="women" name="category">
+                        <input type="hidden" value="Plain Jumper" name="name" readonly size ><h1>Plain Jumper</h1>
+                        <input type="hidden" value="125Bir" name="price" readonly><h1>125 birr</h1>
+                        <label for="size">size</label>
+                        <select name="size">
+                            <option selected="selected">medium</option>
+                            
+                            <option>larg</option>
+                            <option>Small</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select> <br><br>
+                        <label for="color">Select color</label>
+                        <select name="color">
+                            <option selected="selected">black</option>
+                            
+                            <option>pink</option>
+                            <option>grey</option>
+                            <option>green</option>
+                            <option>yellow</option>
+                            <option>Deep blue</option>
+                            <option>white</option>
+                            <option>cream</option>
+                            <option>purple</option>
+                        </select><br> <br>
+                        <label for="num">Select quantity</label>
+                        <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
+                        <button class="btn" type="submit">add to cart</button>
+                    </form>
+
+                   </div> 
+                
 
                 <!--fivth-->
 
@@ -286,26 +347,41 @@
                     </div>
                 </div>
                 <div class="description">
-                    <h1> Oversized Loose Fit Turn up Batwing Sleeve</h1>
+                    <form action="./backend/cart.php" method="post">
 
-                    <h5>125Birr</h5>
-                    <select>
-                        <option selected="selected">select size</option>
-                        <option>medium</option>
-                        <option>larg</option>
-                        <option>Small</option>
-                        <option>XL</option>
-                        <option>XXL</option>
-                    </select>
-                    <input type="number" value="1" width="2%">
-                    <a href="" class="btn">add to cart</a>
-                    <h4>Product descrition</h4>
-                    <p>Product describtion
-                        Page 5<br>fHUsdfbYUWDaksmdjasiodfjklwea
-                    </p>
-                </div>
+                        <input type="hidden" value="women" name="category">
+                        <input type="hidden" value="Batwing sleeve" name="name" readonly size ><h1>Batwing sleeve</h1>
+                        <input type="hidden" value="125Bir" name="price" readonly><h1>125 birr</h1>
+                        <label for="size">size</label>
+                        <select name="size">
+                            <option selected="selected">medium</option>
+                            
+                            <option>large</option>
+                            <option>Small</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select> <br><br>
+                        <label for="color">Select color</label>
+                        <select name="color">
+                            <option selected="selected">light-pink</option>
+                            
+                            <option>pink</option>
+                            <option>deep red</option>
+                            <option>blue</option>
+                            <option>grey</option>
+                            <option>black</option>
+                            <option>green</option>
+                            
+                        </select><br> <br>
+                        <label for="num">Select quantity</label>
+                        <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
+                        <button class="btn" type="submit">add to cart</button>
+                    </form>
+
+                   </div> 
+                
             </div>
-        </div>
+         
     </div>
 </body>
 <script>

@@ -1,10 +1,10 @@
 <?php
 // Include config file
-require "Configfile.php";
+require "connection.php";
 
 // Get form data
 $user_name = $_POST['username'];
-$first_name = $_POST['firstname'];
+$first_name = $_POST['fristname'];
 $last_name = $_POST['lastname'];
 $email = $_POST['email'];
 $password = $_POST['password'];
@@ -13,7 +13,7 @@ $password = $_POST['password'];
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
 // Prepare and bind
-$stmt = $link->prepare("INSERT INTO logins (username, firstname, lastname, email, password) VALUES (?, ?, ?, ?, ?)");
+$stmt = $link->prepare("INSERT INTO signup (username, fristname, lastname, email, password) VALUES (?, ?, ?, ?, ?)");
 $stmt->bind_param("sssss", $user_name, $first_name, $last_name, $email, $hashed_password);
 
 // Execute the statement
