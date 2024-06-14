@@ -34,6 +34,10 @@
   cursor: pointer;
 }
 
+.img img:hover {
+  transform: scale(1.6);
+}
+
 #icons img {
   width: 50px;
   height: 20px;
@@ -85,11 +89,6 @@
   width: 15%;
 }
 
-/* class for .productMarigin */
-.productMarigin {
-  border: 2px silver solid;
-}
-
 .small-row {
   display: flex;
   justify-content: flex-start;
@@ -100,9 +99,10 @@
   display: flex;
   align-items: flex-start;
   margin-bottom: 50px;
-  margin-top: 40px;
-  margin-left: 50px;
+  margin-top: 30px;
+  margin-left: 30px;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .description {
@@ -111,6 +111,7 @@
 
 .description h1,
 .description p {
+  font-size: small;
   margin: 10px 0;
 }
 
@@ -132,13 +133,13 @@
 /* items in clothing  */
 
 .kidlist {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .main-list {
   border-radius: 30px;
-  background-color: rgb(124, 129, 129);
-  width: 180px;
+  background-color: rgb(191, 200, 201);
+  width: 120px;
   height: 40px;
 }
 
@@ -147,8 +148,10 @@
   justify-content: flex-start;
   flex-direction: row;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 30px;
   margin-top: 2px;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 10px;
 }
 
 .kid {
@@ -166,8 +169,18 @@
 
 .specificlist ul {
   list-style: none;
+
+  /* spacificlisting */
 }
 
 .specificlist ul li a {
   text-decoration: none;
+}
+
+#kid-select {
+  background-color: blue;
+}
+
+#icon-change {
+  color: blue;
 }

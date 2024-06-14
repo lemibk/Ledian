@@ -84,18 +84,23 @@
 /* kids */
 .item {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.listitems {
+  margin-left: 250px;
 }
 
 .listitems h1 {
   font-weight: 100;
   font-size: large;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .main-list {
   border-radius: 30px;
   background-color: rgb(191, 200, 201);
-  width: 180px;
+  width: 160px;
   height: 40px;
 }
 
@@ -106,6 +111,8 @@
   text-decoration: none;
   margin-left: 30px;
   margin-top: 2px;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 10px;
 }
 
 .kid {
@@ -114,4 +121,12 @@
 
 .kidlist {
   margin-top: 100px;
+}
+
+#icon-change {
+  color: blue;
+}
+
+#kid-select {
+  background-color: rgb(0, 136, 255);
 }
