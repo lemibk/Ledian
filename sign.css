@@ -1,0 +1,57 @@
+.cointainer {
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+  width: 100%;
+  margin-left: 17%;
+  margin-top: 6%;
+}
+
+.blue {
+  color: black;
+  background-image: url(./image/5.jpg);
+  text-align: center;
+  width: 25%;
+}
+
+.white {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background-image: url(./image/5.jpg);
+}
+
+.the-button {
+  background-color: rgba(216, 219, 18, 0.763);
+  text-align: center;
+  border-radius: 20px;
+  width: 20%;
+  height: 30px;
+}
+
+.the-buttons {
+  background-color: rgba(216, 219, 18, 0.763);
+  text-align: center;
+  border-radius: 10px;
+  width: 60%;
+  height: 20%;
+}
+
+.forms {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-input {
+  height: 30px;
+  margin-bottom: 5px;
+  background-color: blanchedalmond;
+  border-radius: 60px;
+}
+
+body {
+  background-image: url("./image/4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
