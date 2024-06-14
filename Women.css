@@ -85,3 +85,11 @@
 .Women a {
   text-decoration: none;
 }
+
+.tab {
+  width: 80px;
+  color: #000;
+  background-color: #f9f6f6;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
