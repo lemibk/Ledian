@@ -134,3 +134,42 @@
   text-decoration: none;
   list-style: none;
 }
+
+@media (max-width: 767px) {
+  .circle {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    margin-left: 0;
+    width: 130px;
+    background-color: #000;
+    height: 130px;
+    border-radius: 50%;
+  }
+
+  .Mens {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    justify-content: center;
+    padding-left: 20%;
+  }
+
+  #Men-select {
+    background-color: rgb(0, 136, 255);
+  }
+
+  .circle a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .Mens a {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .Mens ul {
+    text-decoration: none;
+    list-style: none;
+  }
+}
