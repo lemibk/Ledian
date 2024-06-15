@@ -88,23 +88,40 @@
                 </div>
             </div>
             <div class="description">
-                <h1>Shoes</h1>
-
-                <h5>3750 Birr</h5>
-                <select>
-                    <option selected="selected">select size</option>
-                    <option>39</option>
-                    <option>40</option>
-                    <option>41</option>
-                    <option>42</option>
-                    <option>43</option>
-                </select>
-                <input type="number" value="1" width="2%">
-                <a href="" class="btn">add to cart</a>
-                <h4>Product description</h4>
-                <p>Product description
-                    these are shoes,page 1<br>
-                </p>
+                <form action="./backend/cart.php" method="post">
+            
+                    <input type="hidden" value="Men" name="category">
+                    <input type="hidden" value="shoes" name="name" readonly size="50" class="txt">
+                    <h1>Nike_Shoes</h1>
+                    <input type="hidden" value="3750birr" name="price" readonly>
+                    <h1>3750 birr</h1>
+                    <label for="size">size</label>
+                    <select name="size">
+                        <option selected="selected">39</option>
+            
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                    </select> <br><br>
+                    <label for="color">select color</label>
+                    <select name="color">
+                        <option selected="selected">black</option>
+            
+                        <option>white</option>
+                        <option>blue</option>
+                        <option>green</option>
+                        <option>grey</option>
+                        <option>red</option>
+                        <option>yellow</option>
+                    </select><br> <br>
+                    <label for="num">Select quantity</label>
+                    <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
+                    <button class="btn" type="submit">add to cart</button>
+                </form>
+            
+            
+            
             </div>
 
 
@@ -132,9 +149,7 @@
                     <div class="small-col"><img src="./image/Mens/shoes/adidas/5.webp" alt="Shirt"
                             onclick="changeImage2(this.src)">
                     </div>
-                    <div class="small-col"><img src="./image/Mens/shoes/adidas/6.webp" alt="Shirt"
-                            onclick="changeImage2(this.src)">
-                    </div>
+                    
 
 
 
@@ -142,23 +157,39 @@
                 </div>
             </div>
             <div class="description">
-                <h1>Shoes</h1>
-
-                <h5>2700 Birr</h5>
-                <select>
-                    <option selected="selected">select size</option>
-                    <option>39</option>
+                <form action="./backend/cart.php" method="post">
+            
+                    <input type="hidden" value="Men" name="category">
+                    <input type="hidden" value="shoes" name="name" readonly size="50" class="txt">
+                    <h1>Adidas_Shoes</h1>
+                    <input type="hidden" value="2700birr" name="price" readonly>
+                    <h1>2700 birr</h1>
+                    <label for="size">size</label>
+                    <select name="size">
+                    <option selected="selected">39</option>
+                    
                     <option>40</option>
                     <option>41</option>
                     <option>42</option>
                     <option>43</option>
-                </select>
-                <input type="number" value="1" width="2%">
-                <a href="" class="btn">add to cart</a>
-                <h4>Product description</h4>
-                <p>Product description
-                    these are shoes,page 2<br>
-                </p>
+                    </select> <br><br>
+                    <label for="color">select color</label>
+                    <select name="color">
+                        <option selected="selected">blueblack</option>
+            
+                        <option>grey</option>
+                        <option>black</option>
+                        <option>brown</option>
+                        <option>dark_grey</option>
+                        
+                    </select><br> <br>
+                    <label for="num">Select quantity</label>
+                    <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
+                    <button class="btn" type="submit">add to cart</button>
+                </form>
+            
+            
+            
             </div>
 
             <!--third-->
@@ -186,25 +217,40 @@
 
                 </div>
             </div>
-            <div class="description">
-                <h1>Shoes</h1>
-
-                <h5>3750 Birr</h5>
-                <select>
-                    <option selected="selected">select size</option>
-                    <option>39</option>
+        <div class="description">
+            <form action="./backend/cart.php" method="post">
+        
+                <input type="hidden" value="Men" name="category">
+                <input type="hidden" value="shoes" name="name" readonly size="50" class="txt">
+                <h1>Lacoste_Shoes</h1>
+                <input type="hidden" value="3750birr" name="price" readonly>
+                <h1>3750 birr</h1>
+                <label for="size">size</label>
+                <select name="size">
+                    <option selected="selected">39</option>
+                    
                     <option>40</option>
                     <option>41</option>
                     <option>42</option>
                     <option>43</option>
-                </select>
-                <input type="number" value="1" width="2%">
-                <a href="" class="btn">add to cart</a>
-                <h4>Product description</h4>
-                <p>Product description
-                    these are shoes,page 3<br>
-                </p>
-            </div>
+                </select> <br><br>
+                <label for="color">select color</label>
+                <select name="color">
+                    <option selected="selected">grey</option>
+        
+                    <option>white</option>
+                    <option>black</option>
+                    <option>red</option>
+                    <option>striped_white</option>
+                </select><br> <br>
+                <label for="num">Select quantity</label>
+                <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
+                <button class="btn" type="submit">add to cart</button>
+            </form>
+        
+        
+        
+        </div>
         </div>
         <!--fourth-->
 
@@ -229,23 +275,36 @@
                 </div>
             </div>
             <div class="description">
-                <h1>Shoes</h1>
-
-                <h5>1500 Birr</h5>
-                <select>
-                    <option selected="selected">select size</option>
-                    <option>39</option>
-                    <option>40</option>
-                    <option>41</option>
-                    <option>42</option>
-                    <option>43</option>
-                </select>
-                <input type="number" value="1" width="2%">
-                <a href="" class="btn">add to cart</a>
-                <h4>Product description</h4>
-                <p>Product description
-                    these are shoes,page 4<br>
-                </p>
+                <form action="./backend/cart.php" method="post">
+            
+                    <input type="hidden" value="Men" name="category">
+                    <input type="hidden" value="shoes" name="name" readonly size="50" class="txt">
+                    <h1>Shoes</h1>
+                    <input type="hidden" value="1500birr" name="price" readonly>
+                    <h1>1500 birr</h1>
+                    <label for="size">size</label>
+                    <select name="size">
+                        <option selected="selected">39</option>
+                        
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                    </select> <br><br>
+                    <label for="color">select color</label>
+                    <select name="color">
+                        <option selected="selected">chacolate</option>
+            
+                        <option>brown</option>
+                        <option>black</option>
+                    </select><br> <br>
+                    <label for="num">Select quantity</label>
+                    <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
+                    <button class="btn" type="submit">add to cart</button>
+                </form>
+            
+            
+            
             </div>
 
             <!--fivth-->
@@ -279,25 +338,43 @@
 
                 </div>
             </div>
-            <div class="description">
-                <h1>Shoes</h1>
-
-                <h5>2500 Birr</h5>
-                <select>
-                    <option selected="selected">select size</option>
-                    <option>39</option>
+        <div class="description">
+            <form action="./backend/cart.php" method="post">
+        
+                <input type="hidden" value="Men" name="category">
+                <input type="hidden" value="shoes" name="name" readonly size="50" class="txt">
+                <h1>NikeAir_Shoes</h1>
+                <input type="hidden" value="2500birr" name="price" readonly>
+                <h1>2500 birr</h1>
+                <label for="size">size</label>
+                <select name="size">
+                    <option selected="selected">39</option>
+                    
                     <option>40</option>
                     <option>41</option>
                     <option>42</option>
                     <option>43</option>
-                </select>
-                <input type="number" value="1" width="2%">
-                <a href="" class="btn">add to cart</a>
-                <h4>Product description</h4>
-                <p>Product description
-                    these are shoes,page 5<br>
-                </p>
-            </div>
+                </select> <br><br>
+                <label for="color">select color</label>
+                <select name="color">
+                    <option selected="selected">black</option>
+        
+                    <option>white</option>
+                    <option>blackStriped_white</option>
+                    <option>whiteStriped_black</option>
+                    <option>redAndWhite</option>
+                    <option>blueStriped_white</option>
+                    <option>redStriped_grey</option>
+                    <option>greenStriped_white</option>
+                </select><br> <br>
+                <label for="num">Select quantity</label>
+                <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
+                <button class="btn" type="submit">add to cart</button>
+            </form>
+        
+        
+        
+        </div>
 
 
 
