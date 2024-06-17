@@ -37,25 +37,48 @@
         </div>
     </section>
     <div>
-        <div class="main">
-            <div class="Mens">
-                <ul>
-                    <h1>Men clothes</h1>
-                    <li class="tab"><a href="./T-shirt_men.html">T-shirt &nbsp;&nbsp;&nbsp;&nbsp;<img id="icon-change"
-                                src="./icons/up-arrow.svg" alt=""></a></li>
-                    <li class="tab"><a href="./ThrouserMen.html">Trousers &nbsp; <img src="./icons/up-arrow.svg"
-                                alt=""></a></li>
-                    <li class="tab"><a href="./jacketMen.html">Jacket &nbsp; &nbsp; &nbsp; <img
-                                src="./icons/up-arrow.svg" alt=""></a></li>
-                    <li class="tab"><a href="./sweaterMen.html">Sweater &nbsp; &nbsp; &nbsp; &nbsp; <img
-                                src="./icons/down-arrow.svg" alt=""></a></li>
 
-                    <li class="tab"><a href="./shoeMen.html">Shoes &nbsp; &nbsp; &nbsp;<img src="./icons/up-arrow.svg"
-                                alt=""></a>
-                    </li>
-
+        <div class="category-container">
+        
+            <div class="category-container">
+                <div class="category2 ">
+                    <a href="./T-shirt_men.html">Shirts</a>
+                </div>
+                <div class="category2">
+                    <a href="./ThrouserMen.html">Trousers</a>
+                </div>
+                <div class="category2">
+                    <a href="./jacketMen.html">Jacket</a>
+                </div>
+                <div class="category2" id="Men-select">
+                    <a href="./sweaterMen.html">Sweater</a>
+                </div>
+                <div class="category2">
+                    <a href="./shoeMen.html">Shoes</a>
+                </div>
+            </div>
+            <!--hum menu-->
+        
+            <div class="off-screen-menu">
+                <ul class="logo">
+                    <li><a href="./T-shirt_men.html">Shirts</a></li>
+                    <li><a href="./ThrouserMen.html">Trousers</a></li>
+                    <li><a href="./jacketMen.html">Jacket</a></li>
+                    <li><a href="./sweaterMen.html">Sweater</a></li>
+                    <li><a href="./shoeMen.html">Shoes</a></li>
                 </ul>
             </div>
+        
+            <nav>
+                <div class="ham-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+
 
             <div class="product" class="productMarigin">
                 <div class="img">
@@ -77,39 +100,39 @@
 
                 </div>
             </div>
-        <div class="description">
-            <form action="./backend/cart.php" method="post">
-        
-                <input type="hidden" value="Men" name="category">
-                <input type="hidden" value="sweater" name="name" readonly size="50" class="txt">
-                <h1>Sweater</h1>
-                <input type="hidden" value="500birr" name="price" readonly>
-                <h1>1800 birr</h1>
-                <label for="size">size</label>
-                <select name="size">
-                    <option selected="selected">small</option>
-        
-                    <option>medium</option>
-                    <option>large</option>
-                    <option>XL</option>
-                    <option>XXL</option>
-                </select> <br><br>
-                <label for="color">select color</label>
-                <select name="color">
-                    <option selected="selected">khaki</option>
-        
-                    <option>grey</option>
-                    <option>red_brown</option>
-                    <option>black</option>
-                </select><br> <br>
-                <label for="num">Select quantity</label>
-                <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                <button class="btn" type="submit">add to cart</button>
-            </form>
-        
-        
-        
-        </div>
+            <div class="description">
+                <form action="./backend/cart.php" method="post">
+
+                    <input type="hidden" value="Men" name="category">
+                    <input type="hidden" value="sweater" name="name" readonly size="50" class="txt">
+                    <h1>Sweater</h1>
+                    <input type="hidden" value="500birr" name="price" readonly>
+                    <h1>1800 birr</h1>
+                    <label for="size">size</label>
+                    <select name="size">
+                        <option selected="selected">small</option>
+
+                        <option>medium</option>
+                        <option>large</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                    </select> <br><br>
+                    <label for="color">select color</label>
+                    <select name="color">
+                        <option selected="selected">khaki</option>
+
+                        <option>grey</option>
+                        <option>red_brown</option>
+                        <option>black</option>
+                    </select><br> <br>
+                    <label for="num">Select quantity</label>
+                    <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
+                    <button class="btn" type="submit">add to cart</button>
+                </form>
+
+
+
+            </div>
 
 
 
@@ -146,42 +169,42 @@
 
                 </div>
             </div>
-        <div class="description">
-            <form action="./backend/cart.php" method="post">
-        
-                <input type="hidden" value="Men" name="category">
-                <input type="hidden" value="sweater" name="name" readonly size="50" class="txt">
-                <h1>Sweater</h1>
-                <input type="hidden" value="1200birr" name="price" readonly>
-                <h1>1200 birr</h1>
-                <label for="size">size</label>
-                <select name="size">
-                    <option selected="selected">small</option>
-        
-                    <option>medium</option>
-                    <option>large</option>
-                    <option>XL</option>
-                    <option>XXL</option>
-                </select> <br><br>
-                <label for="color">select color</label>
-                <select name="color">
-                    <option selected="selected">black</option>
-        
-                    <option>whiteblue</option>
-                    <option>chacolate</option>
-                    <option>darkgrey</option>
-                    <option>brown</option>
-                    <option>grey</option>
-                    <option>white</option>
-                </select><br> <br>
-                <label for="num">Select quantity</label>
-                <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                <button class="btn" type="submit">add to cart</button>
-            </form>
-        
-        
-        
-        </div>
+            <div class="description">
+                <form action="./backend/cart.php" method="post">
+
+                    <input type="hidden" value="Men" name="category">
+                    <input type="hidden" value="sweater" name="name" readonly size="50" class="txt">
+                    <h1>Sweater</h1>
+                    <input type="hidden" value="1200birr" name="price" readonly>
+                    <h1>1200 birr</h1>
+                    <label for="size">size</label>
+                    <select name="size">
+                        <option selected="selected">small</option>
+
+                        <option>medium</option>
+                        <option>large</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                    </select> <br><br>
+                    <label for="color">select color</label>
+                    <select name="color">
+                        <option selected="selected">black</option>
+
+                        <option>whiteblue</option>
+                        <option>chacolate</option>
+                        <option>darkgrey</option>
+                        <option>brown</option>
+                        <option>grey</option>
+                        <option>white</option>
+                    </select><br> <br>
+                    <label for="num">Select quantity</label>
+                    <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
+                    <button class="btn" type="submit">add to cart</button>
+                </form>
+
+
+
+            </div>
 
             <!--third-->
 
@@ -201,13 +224,13 @@
                             onclick="changeImage3(this.src)"></div>
                     <div class="small-col"><img src="./image/Mens/Sweater/s3/4.webp" alt=" Round Scoop"
                             onclick="changeImage3(this.src)"></div>
-                    
+
 
                 </div>
             </div>
             <div class="description">
                 <form action="./backend/cart.php" method="post">
-            
+
                     <input type="hidden" value="Men" name="category">
                     <input type="hidden" value="sweater" name="name" readonly size="50" class="txt">
                     <h1>Sweater</h1>
@@ -216,7 +239,7 @@
                     <label for="size">size</label>
                     <select name="size">
                         <option selected="selected">small</option>
-            
+
                         <option>medium</option>
                         <option>large</option>
                         <option>XL</option>
@@ -225,7 +248,7 @@
                     <label for="color">select color</label>
                     <select name="color">
                         <option selected="selected">darkgrey</option>
-            
+
                         <option>whitegrey</option>
                         <option>black</option>
                         <option>grey</option>
@@ -234,9 +257,9 @@
                     <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
                     <button class="btn" type="submit">add to cart</button>
                 </form>
-            
-            
-            
+
+
+
             </div>
         </div>
         <!--fourth-->
@@ -271,7 +294,7 @@
             </div>
             <div class="description">
                 <form action="./backend/cart.php" method="post">
-            
+
                     <input type="hidden" value="Men" name="category">
                     <input type="hidden" value="sweater" name="name" readonly size="50" class="txt">
                     <h1>Sweater</h1>
@@ -280,7 +303,7 @@
                     <label for="size">size</label>
                     <select name="size">
                         <option selected="selected">small</option>
-            
+
                         <option>medium</option>
                         <option>large</option>
                         <option>XL</option>
@@ -289,7 +312,7 @@
                     <label for="color">select color</label>
                     <select name="color">
                         <option selected="selected">white_chacolate</option>
-            
+
                         <option>red_brown</option>
                         <option>purple</option>
                         <option>chacolate</option>
@@ -302,9 +325,9 @@
                     <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
                     <button class="btn" type="submit">add to cart</button>
                 </form>
-            
-            
-            
+
+
+
             </div>
 
             <!--fivth-->
@@ -330,7 +353,7 @@
             </div>
             <div class="description">
                 <form action="./backend/cart.php" method="post">
-            
+
                     <input type="hidden" value="Men" name="category">
                     <input type="hidden" value="sweater" name="name" readonly size="50" class="txt">
                     <h1>Sweater</h1>
@@ -339,7 +362,7 @@
                     <label for="size">size</label>
                     <select name="size">
                         <option selected="selected">small</option>
-            
+
                         <option>medium</option>
                         <option>large</option>
                         <option>XL</option>
@@ -348,7 +371,7 @@
                     <label for="color">select color</label>
                     <select name="color">
                         <option selected="selected">darkgreen</option>
-            
+
                         <option>dark_orange</option>
                         <option>black</option>
                         <option>white_chacolate</option>
@@ -358,9 +381,9 @@
                     <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
                     <button class="btn" type="submit">add to cart</button>
                 </form>
-            
-            
-            
+
+
+
             </div>
 
 
