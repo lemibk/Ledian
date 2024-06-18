@@ -27,7 +27,7 @@
                 <input type="text" class="text-input" name="username" placeholder="Select a username" required>
                 <input type="text" class="text-input" name="fristname" placeholder="Enter your fristname" required>
                 <input type="text" class="text-input" name="lastname" placeholder="Enter your lastname" required>
-                <input type="email" class="text-input" name="email" placeholder="Enter your Email" required>
+                <input type="email" id="transform" class="text-input" name="email" placeholder="Enter your Email" required>
                 <input type="password" id="password" class="text-input" name="password" placeholder="Create a password" required>
                 <input type="password" id="confirm" class="text-input" name="confirm" placeholder="Confirm the password" required>
                 <div class="text"></div>
@@ -37,26 +37,6 @@
         </form>
 
     </div>
-    <script>
-
-const form = document.getElementsByClassName('forms');
-        const password = document.getElementById('password');
-        const confirms = document.getElementById('confirm');
-        const errortxt=document.getElementsByClassName('text');
-
-        forms.addEventListener('submit', (event) => {
-            event.preventDefault();
-const fe=confirms.value;
-const de=confirms.value;
-
-            if (fe=== de) {
-               
-                forms.submit();
-            } else {
-                errortxt.textContent = '!!! Your password does not match.'; alert("opop");
-            }
-        });
-    </script>
 </body>
 
 </html>

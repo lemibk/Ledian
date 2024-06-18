@@ -1,8 +1,6 @@
 <?php
 // Include config file
 require "connection.php";
-$message;
-$message1;
 
    
 
@@ -24,6 +22,8 @@ $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 $stmt = $link->prepare("INSERT INTO signup (username, fristname, lastname, email, password) VALUES (?, ?, ?, ?, ?)");
 $stmt->bind_param("sssss", $user_name, $first_name, $last_name, $email, $hashed_password);
 // Execute the statement
+
+if($confirm===$password){
 try{
     if ($stmt->execute()){
     $message= "Account  created successfully";
@@ -37,8 +37,13 @@ try{
     $header="../signup.html";
     $btxt="Retry";
 }
-
-
+}
+else{
+  $message= "Your Password does not mach";
+    $message1="Check and Retry again";
+    $btxt="Retry";
+    $header="../signup.html";
+}
 
 
 // Close the connection
