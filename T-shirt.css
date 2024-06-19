@@ -218,6 +218,25 @@
 }
 
 @media (max-width: 767px) {
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+    padding-left: 0;
+    margin-bottom: 25%;
+    margin-top: 10%;
+  }
+
+  .description input {
+    flex-direction: column;
+    width: auto;
+    height: 20%;
+    font-weight: 20;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
   .navigations {
     display: none;
   }
@@ -227,7 +246,7 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 50px;
-    padding-left: 15px;
+    padding-left: 0;
   }
 
   .view {
@@ -259,10 +278,14 @@
     flex-direction: column;
     justify-content: flex-start;
     width: auto;
+    padding-left: 0;
   }
 
   /* class for .productMarigin */
   .productMarigin {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
     width: auto;
     border: 2px silver solid;
   }

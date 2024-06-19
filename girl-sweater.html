@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="kids-all.css">
     <title>ledian</title>
-    <script src="./index.js"></script>
+    
     <link rel="icon" href="./icons/wardrobe.png">
 </head>
 
@@ -38,44 +38,66 @@
         </div>
     </div>
 
-    <div class="kid">
-        <div>
-            <div class="kidlist">
-                <div class=" main-list">
-                    <a href="./KidBoys.html">Boys'</a>
-                </div>
-                <div class=" main-list" id="kid-select">
-                    <a href="./KidGirl.html">Girls'</a>
-                </div>
-                <div class=" main-list">
-                    <a href="./KidNew-Born.html">New Borns'</a>
-                </div>
+    <div class="category-container">
+    
+        <div class="category-container">
+            <div class="category3 " >
+                <a href="./KidBoys.html">Boys'</a>
             </div>
-
-            <div class="specificlist">
-                <h1>Girls clothes</h1>
-                <ul>
-                    <li class="tab"><a href="./girl-dress.html">Dress &nbsp;&nbsp;&nbsp;&nbsp;<img id="icon-change"
-                                src="./icons/up-arrow.svg" alt=""></a></li>
-                    <li class="tab"><a href="./girl-jacket.html">Jacket &nbsp; <img src="./icons/up-arrow.svg"
-                                alt=""></a>
-                    </li>
-
-                    <li class="tab"><a href="./girl-shoes.html"> Shoes &nbsp; <img src="./icons/up-arrow.svg"
-                                alt=""></a>
-                    </li>
-                    <li class="tab"><a href="./girl-skirt.html">Skirt&nbsp; &nbsp; &nbsp; <img
-                                src="./icons/up-arrow.svg" alt=""></a>
-                    </li>
-                    <li class="tab"><a href="./girl-sweater.html">Sweater <img src="./icons/up-arrow.svg" alt=""></a>
-                    </li>
-                    <li class="tab"><a href="./girl-T-shirt.html">T-shirt&nbsp; &nbsp; &nbsp;<img
-                                src="./icons/up-arrow.svg" alt=""></a>
-                    </li>
-                </ul>
+            <div class="category3"id="kid-select">
+                <a href="./KidGirl.html">Girls'</a>
+            </div>
+            <div class="category3">
+                <a href="./KidNew-Born.html">Infants'</a>
             </div>
         </div>
+    </div>
+    <div class="category-container">
+    
+        <div class="category-container">
+            <div class="category2 ">
+                <a href="./girl-T-shirt.html ">Shirts</a>
+            </div>
+            <div class="category2">
+                <a href="./girl-dress.html">Dress</a>
+            </div>
+            <div class="category2">
+                <a href="./girl-jacket.html">Jacket</a>
+            </div>
+            <div class="category2"  id="kid-select">
+                <a href="./girl-sweater.html">Sweater</a>
+            </div>
+            <div class="category2">
+                <a href="./girl-shoes.html">Shoes</a>
+            </div>
+            <div class="category2">
+                <a href="./girl-skirt.html">Skirt</a>
+            </div>
+           
+        </div>
+        <!--hum menu-->
+    
+        <div class="off-screen-menu">
+            <ul class="logo">
+                <li><a href="./girl-T-shirt.html ">Shirts</a></li>
+                <li><a href="./girl-dress.html">Dress</a></li>
+                <li><a href="./girl-jacket.html">Jacket</a></li>
+                <li><a href="./girl-sweater.html">Sweater</a></li>
+                <li><a href="./girl-shoes.html">Shoes</a></li>
+                <li><a href="./girl-skirt.html">Skirt</a></li>
+            </ul>
+        </div>
+    
+        <nav>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
 
+    <div class="kid">
         <div class="main">
             <div class="product-container">
                 <div class="product">
@@ -334,5 +356,16 @@
     </div>
 
 </body>
+<script>
+    const hamMenu = document.querySelector('.ham-menu');
+    const offScreenMenu = document.querySelector('.off-screen-menu');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamMenu.addEventListener('click', () => {
+        hamMenu.classList.toggle('active');
+        offScreenMenu.classList.toggle('active');
+        navMenu.classList.toggle('hidden');
+    });
+</script>
 
 </html>

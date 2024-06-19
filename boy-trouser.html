@@ -36,6 +36,7 @@
             <a href="./Kids.html">Kids</a>
         </div>
     </div>
+    
     <div class="category-container">
 
 		<div class="category-container">
@@ -46,7 +47,7 @@
 				<a href="./KidGirl.html">Girls'</a>
 			</div>
 			<div class="category3">
-				<a href="./KidNew-Born.html">New Borns'</a>
+				<a href="./KidNew-Born.html">Infants'</a>
 			</div>
 		</div>
 	</div>
@@ -428,7 +429,19 @@
         </div>
     </div>
 </body>
-<script src="./index.js">
+<script >
+
+    
+            const hamMenu = document.querySelector('.ham-menu');
+            const offScreenMenu = document.querySelector('.off-screen-menu');
+            const navMenu = document.getElementById('nav-menu');
+
+        hamMenu.addEventListener('click', () => {
+                hamMenu.classList.toggle('active');
+            offScreenMenu.classList.toggle('active');
+            navMenu.classList.toggle('hidden');
+        });
+    
     function changeImage(src) {
         document.getElementById('main-image').src = src;
     }

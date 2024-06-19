@@ -176,7 +176,7 @@
 }
 
 #icon-change {
-  color: blue;
+  color: rgb(0, 136, 255);
 }
 
 #kid-select {
@@ -200,7 +200,6 @@
     margin-bottom: 20%;
     display: flex;
     flex-direction: column;
-    border: red solid;
   }
 
   .kop-align {

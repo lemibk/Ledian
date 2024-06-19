@@ -29,7 +29,7 @@
             <div class="category1">
                 <a href="./Women.html">Women</a>
             </div>
-            <div class="category1">
+            <div class="category1" id="Men-select">
                 <a href="./Men.html">Men</a>
             </div>
             <div class="category1">
@@ -393,6 +393,15 @@
     </div>
 </body>
 <script>
+    const hamMenu = document.querySelector('.ham-menu');
+        const offScreenMenu = document.querySelector('.off-screen-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamMenu.addEventListener('click', () => {
+            hamMenu.classList.toggle('active');
+            offScreenMenu.classList.toggle('active');
+            navMenu.classList.toggle('hidden');
+        });
     function changeImage(src) {
         document.getElementById('main-image').src = src;
     }
