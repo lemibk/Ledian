@@ -1,75 +1,7 @@
-.frist-section-contain {
-  display: flex;
-  flex-direction: row;
-  gap: 30%;
-}
-
-.frist-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 15px;
-}
-
-.frist-section li {
-  list-style: none;
-}
-
-.frist-section-contain a {
-  text-decoration: none;
-}
-
-.search {
-  padding-right: 170px;
-}
 
 .picture img {
   width: 50%;
   height: 50%;
-}
-
-#icons img {
-  width: 50px;
-  height: 20px;
-}
-
-#logo {
-  gap: 20px;
-  display: flex;
-  flex-direction: row;
-  top: 0%;
-}
-
-#logo img {
-  width: 50px;
-  height: 40px;
-}
-
-/* catagory */
-.category1 {
-  display: flex;
-  gap: 90px;
-  width: 10%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin: 20px;
-  border-radius: 30px;
-  background-color: rgb(235, 239, 221);
-  height: 40px;
-  font-weight: bold;
-  font-size: larger;
-}
-
-.category1 a {
-  display: flex;
-  text-decoration: none;
-  color: black;
-}
-
-.category-container {
-  display: flex;
-  justify-content: center;
 }
 
 .picture {
@@ -117,4 +49,99 @@
   #logo {
     gap: 0%;
   }
+}
+
+.frist-section-contain {
+  display: flex;
+  flex-direction: row;
+  gap: 30%;
+}
+
+.frist-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.frist-section li {
+  list-style: none;
+}
+
+.frist-section-contain a {
+  text-decoration: none;
+}
+
+.search {
+  padding-right: 170px;
+}
+
+#icons img {
+  width: 50px;
+  height: 20px;
+}
+
+#logo {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  top: 0%;
+}
+
+#logo img {
+  width: 50px;
+  height: 40px;
+}
+
+/* catagory */
+.category1 {
+  display: flex;
+  gap: 90px;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 20px;
+  border-radius: 30px;
+  background-color: rgb(235, 239, 221);
+  height: 40px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.category1 a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutUs {
+  list-style-type: none;
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  gap: 15%;
+  text-decoration: none;
+  margin-top: 2%;
+}
+
+.contactUsAppearance {
+  display: flex;
+  gap: 5%;
+}
+
+.displayContact {
+  display: flex;
+  gap: 15%;
+}
+
+#contactIcons img {
+  margin-top: 35%;
+  width: 50px;
+  height: 20px;
 }
