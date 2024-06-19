@@ -16,7 +16,7 @@ $verify = password_verify($plain, $dbpass);
 if($verify){
 $message="Login Successfull";
 $message1="You can Continue Your Shopping With us have a nice time";
-$header="../index.html";
+$header="../index1.html";
 }
 else{
 $message= "invalid credentials";

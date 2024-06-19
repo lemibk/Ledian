@@ -6,12 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="T-shirt.css">
-    
+
     <title>ledian</title>
     <link rel="icon" href="./icons/wardrobe.png">
 </head>
 
-<body >
+<body>
     <section>
 
         <div class="frist-section-contain">
@@ -19,16 +19,16 @@
                 Ledian
             </div>
             <div class="frist-section">
-                
+
                 <li id="icons"><a href="./index.html"><img src="./icons/home.svg" alt="Home"></a></li>
-                <li id="icons"> <img src="./icons/cart.svg" alt="cart"> </li>
+                <li id="icons"> <img onclick="window.location.href='./backend/display_cart.php';" src="./icons/cart.svg" alt="cart"> </li>
                 <li><a href="">Sign in</a></li>
                 <li><a href="">Sign up</a></li>
 
             </div>
         </div>
         <div class="category-container">
-            <div class="category1"id="Women-select">
+            <div class="category1" id="Women-select">
                 <a href="./Women.html">Women</a>
             </div>
             <div class="category1">
@@ -40,9 +40,9 @@
         </div>
     </section>
     <div class="category-container">
-    
+
         <div class="category-container">
-            <div class="category2 " >
+            <div class="category2 ">
                 <a href="./T-shirt.html">Shirts</a>
             </div>
             <div class="category2">
@@ -65,7 +65,7 @@
             </div>
         </div>
         <!--hum menu-->
-    
+
         <div class="off-screen-menu">
             <ul class="logo">
                 <li><a href="./T-shirt.html">Shirts</a></li>
@@ -77,7 +77,7 @@
                 <li><a href="./womens-shoes.html">Shoes</a></li>
             </ul>
         </div>
-    
+
         <nav>
             <div class="ham-menu">
                 <span></span>
@@ -87,7 +87,7 @@
         </nav>
     </div>
     <div class="view">
-        
+
         <div>
             <div class="main">
                 <div class="product">
@@ -96,7 +96,8 @@
                     </div>
                     <div class="small-row">
                         <div class="small-col">
-                            <img src="./image/trouser/elastic jeans bllack.jpg" alt="elastic jeans" onclick="changeImage(this.src)">
+                            <img src="./image/trouser/elastic jeans bllack.jpg" alt="elastic jeans"
+                                onclick="changeImage(this.src)">
                         </div>
                         <div class="small-col"><img src="./image/trouser/elastic jeans blue.jpg" alt="elastic jeans"
                                 onclick="changeImage(this.src)"></div>
@@ -104,19 +105,21 @@
                                 onclick="changeImage(this.src)"></div>
                         <div class="small-col"><img src="./image/trouser/elastic jeans.jpg" alt="elastic jeans"
                                 onclick="changeImage(this.src)"></div>
-                        
+
                     </div>
                 </div>
                 <div class="description">
                     <form action="./backend/cart.php" method="post">
 
                         <input type="hidden" value="women" name="category">
-                        <input type="hidden" value="elastic jeans" name="name" ><h1>Elastic jeans</h1>
-                        <input type="hidden" value="1205 Birr" name="price" readonly><h1>1205 birr</h1>
+                        <input type="hidden" value="elastic jeans" name="name">
+                        <h1>Elastic jeans</h1>
+                        <input type="hidden" value="1205 Birr" name="price" readonly>
+                        <h1>1205 birr</h1>
                         <label for="size">size</label>
-                        <select  name="size">
+                        <select name="size">
                             <option selected="selected">25</option>
-                           
+
                             <option>26</option>
                             <option>27</option>
                             <option>28</option>
@@ -125,20 +128,20 @@
                         <label for="color">select color</label>
                         <select name="color">
                             <option selected="selected">black</option>
-                            
-                            
-							
-							<option>blue</option>
-                        
-                            
-							
-							
-                           
-                          
+
+
+
+                            <option>blue</option>
+
+
+
+
+
+
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button  onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -154,7 +157,8 @@
 
                 <div class="product">
                     <div class="img">
-                        <img src="./image/trouser/elevated hihg rise black.jpg" alt="elevated high rise" id="main-image2">
+                        <img src="./image/trouser/elevated hihg rise black.jpg" alt="elevated high rise"
+                            id="main-image2">
                     </div>
                     <div class="small-row">
                         <div class="small-col">
@@ -163,21 +167,23 @@
                         </div>
                         <div class="small-col"><img src="./image/trouser/elevated hihg rise blue.jpg"
                                 alt="elevated high rise" onclick="changeImage2(this.src)"></div>
-                        <div class="small-col"><img src="./image/trouser/elevated hihg rise mistyblue.jpg" alt="elevated high rise"
-                                onclick="changeImage2(this.src)"></div>
-                       
+                        <div class="small-col"><img src="./image/trouser/elevated hihg rise mistyblue.jpg"
+                                alt="elevated high rise" onclick="changeImage2(this.src)"></div>
+
                     </div>
                 </div>
                 <div class="description">
                     <form action="./backend/cart.php" method="post">
 
                         <input type="hidden" value="women" name="category">
-                        <input type="hidden" value="high rise" name="name" ><h1>High rise</h1>
-                        <input type="hidden" value="1205 Birr" name="price" readonly><h1>1580 birr</h1>
+                        <input type="hidden" value="high rise" name="name">
+                        <h1>High rise</h1>
+                        <input type="hidden" value="1205 Birr" name="price" readonly>
+                        <h1>1580 birr</h1>
                         <label for="size">size</label>
-                        <select  name="size">
+                        <select name="size">
                             <option selected="selected">26</option>
-                           
+
                             <option>27</option>
                             <option>28</option>
                             <option>29</option>
@@ -186,20 +192,20 @@
                         <label for="color">select color</label>
                         <select name="color">
                             <option selected="selected">black</option>
-                            
-                            
-							<option>light-blue</option>
-							<option>blue</option>
-                        
-                            
-							
-							
-                           
-                          
+
+
+                            <option>light-blue</option>
+                            <option>blue</option>
+
+
+
+
+
+
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button  onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -213,21 +219,17 @@
 
                 <div class="product">
                     <div class="img">
-                        <img src="./image/trouser/s.jpg"
-                            alt=" skinny jeans " id="main-image3">
+                        <img src="./image/trouser/s.jpg" alt=" skinny jeans " id="main-image3">
                     </div>
                     <div class="small-row">
                         <div class="small-col">
-                            <img src="./image/trouser/s.jpg"
-                                alt="skinny jeans " onclick="changeImage3(this.src)">
+                            <img src="./image/trouser/s.jpg" alt="skinny jeans " onclick="changeImage3(this.src)">
                         </div>
-                        <div class="small-col"><img
-                                src="./image/trouser/skinny jeans black.jpg"
-                                alt=" skinny jeans " onclick="changeImage3(this.src)"></div>
-                        <div class="small-col"><img
-                                src="./image/trouser/skinny jeans blue.jpg"
-                                alt="skinny jeans " onclick="changeImage3(this.src)"></div>
-                      
+                        <div class="small-col"><img src="./image/trouser/skinny jeans black.jpg" alt=" skinny jeans "
+                                onclick="changeImage3(this.src)"></div>
+                        <div class="small-col"><img src="./image/trouser/skinny jeans blue.jpg" alt="skinny jeans "
+                                onclick="changeImage3(this.src)"></div>
+
 
                     </div>
                 </div>
@@ -235,12 +237,14 @@
                     <form action="./backend/cart.php" method="post">
 
                         <input type="hidden" value="women" name="category">
-                        <input type="hidden" value="Skinny jeans" name="name" ><h1>Skinny jeans</h1>
-                        <input type="hidden" value="1500 Birr" name="price" readonly><h1>1500 birr</h1>
+                        <input type="hidden" value="Skinny jeans" name="name">
+                        <h1>Skinny jeans</h1>
+                        <input type="hidden" value="1500 Birr" name="price" readonly>
+                        <h1>1500 birr</h1>
                         <label for="size">size</label>
-                        <select  name="size">
+                        <select name="size">
                             <option selected="selected">27</option>
-                           
+
                             <option>28</option>
                             <option>29</option>
                             <option>30</option>
@@ -249,20 +253,20 @@
                         <label for="color">select color</label>
                         <select name="color">
                             <option selected="selected">light-black</option>
-                            
-                            
-							<option>black</option>
-							<option>blue</option>
-                        
-                            
-							
-							
-                           
-                          
+
+
+                            <option>black</option>
+                            <option>blue</option>
+
+
+
+
+
+
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button  onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -274,22 +278,19 @@
             <div class="main">
                 <div class="product">
                     <div class="img">
-                        <img src="./image/trouser/skinny jeans dark blue.jpg"
-                            alt="skinny jeans" id="main-image4">
+                        <img src="./image/trouser/skinny jeans dark blue.jpg" alt="skinny jeans" id="main-image4">
                     </div>
                     <div class="small-row">
                         <div class="small-col">
-                            <img src="./image/trouser/skinny jeans dark blue.jpg"
-                                alt="skinny jeans  " onclick="changeImage4(this.src)">
+                            <img src="./image/trouser/skinny jeans dark blue.jpg" alt="skinny jeans  "
+                                onclick="changeImage4(this.src)">
                         </div>
 
-                        <div class="small-col"><img
-                                src="./image/trouser/skinny jeans grey.jpg"
-                                alt="skinny jeans " onclick="changeImage4(this.src)"></div>
-                        <div class="small-col"><img
-                                src="./image/trouser/skinny jeans lightblue.jpg"
-                                alt="skinny jeans" onclick="changeImage4(this.src)"></div>
-                        
+                        <div class="small-col"><img src="./image/trouser/skinny jeans grey.jpg" alt="skinny jeans "
+                                onclick="changeImage4(this.src)"></div>
+                        <div class="small-col"><img src="./image/trouser/skinny jeans lightblue.jpg" alt="skinny jeans"
+                                onclick="changeImage4(this.src)"></div>
+
 
                     </div>
                 </div>
@@ -297,12 +298,14 @@
                     <form action="./backend/cart.php" method="post">
 
                         <input type="hidden" value="women" name="category">
-                        <input type="hidden" value="Fuzzy Fleece" name="name" ><h1>Skinny-jeans</h1>
-                        <input type="hidden" value="1205 Birr" name="price" readonly><h1>1205 birr</h1>
+                        <input type="hidden" value="Fuzzy Fleece" name="name">
+                        <h1>Skinny-jeans</h1>
+                        <input type="hidden" value="1205 Birr" name="price" readonly>
+                        <h1>1205 birr</h1>
                         <label for="size">size</label>
-                        <select  name="size">
+                        <select name="size">
                             <option selected="selected">27</option>
-                           
+
                             <option>28</option>
                             <option>29</option>
                             <option>30</option>
@@ -311,44 +314,44 @@
                         <label for="color">select color</label>
                         <select name="color">
                             <option selected="selected">dark blue</option>
-                            
-                            
-							<option>light-blue</option>
-							<option>black</option>
-                        
-                        
-							
-                           
-                          
+
+
+                            <option>light-blue</option>
+                            <option>black</option>
+
+
+
+
+
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
 
                 </div>
 
-                
 
 
-               
-                
+
+
+
             </div>
         </div>
     </div>
 </body>
 <script>
     const hamMenu = document.querySelector('.ham-menu');
-        const offScreenMenu = document.querySelector('.off-screen-menu');
-        const navMenu = document.getElementById('nav-menu');
+    const offScreenMenu = document.querySelector('.off-screen-menu');
+    const navMenu = document.getElementById('nav-menu');
 
-        hamMenu.addEventListener('click', () => {
-            hamMenu.classList.toggle('active');
-            offScreenMenu.classList.toggle('active');
-            navMenu.classList.toggle('hidden');
-        });
+    hamMenu.addEventListener('click', () => {
+        hamMenu.classList.toggle('active');
+        offScreenMenu.classList.toggle('active');
+        navMenu.classList.toggle('hidden');
+    });
     function changeImage(src) {
         document.getElementById('main-image').src = src;
     }
@@ -361,7 +364,9 @@
     function changeImage4(src) {
         document.getElementById('main-image4').src = src;
     }
-   
+    function message() {
+        alert("add successfully");
+    }
 </script>
 
 </html>

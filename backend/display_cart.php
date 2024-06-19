@@ -49,8 +49,8 @@ $total_price = $total_row["total_price"] ? $total_row["total_price"] : 0;
             background-color: #f1f1f1;
         }
 
-        /* Styling the Remove button */
-        .remove-btn {
+        /* Styling the Remove and Edit buttons */
+        .remove-btn, .edit-btn {
             background-color: #ff4d4d;
             color: white;
             border: none;
@@ -59,8 +59,8 @@ $total_price = $total_row["total_price"] ? $total_row["total_price"] : 0;
             border-radius: 4px;
         }
 
-        /* Adding hover effect to Remove button */
-        .remove-btn:hover {
+        /* Adding hover effect to Remove and Edit buttons */
+        .remove-btn:hover, .edit-btn:hover {
             background-color: #e60000;
         }
 
@@ -106,7 +106,8 @@ $total_price = $total_row["total_price"] ? $total_row["total_price"] : 0;
             echo "<td data-label='Size'>" . $row["size"] . "</td>";
             echo "<td data-label='Price'>" . $row["price"] . "</td>";
             echo "<td data-label='Quantity'>" . $row["quantity"] . "</td>";
-            echo "<td data-label='Action'><button class='remove-btn' data-name='" . $row["name"] . "'>Remove</button></td>";
+            echo "<td data-label='Action'><button class='remove-btn' data-name='" . $row["name"] . "'>Remove</button>
+             <button class='edit-btn' data-name='" . $row["name"] . "'>Edit</button></td>";
             echo "</tr>";
         }
 
@@ -121,14 +122,17 @@ $total_price = $total_row["total_price"] ? $total_row["total_price"] : 0;
     </div>
 </div>
 
+<button onclick="window.location.href='../index.html';">Back</button>
+
 <script>
+
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll(".remove-btn").forEach(function(button) {
         button.addEventListener("click", function() {
             var name = this.getAttribute("data-name");
             var row = this.closest("tr");
 
-            if (confirm("Are you sure you want to remove this item from the cart?")) {
+            if (confirm("Are you sureyou want to remove this item from the cart?")) {
                 var xhr = new XMLHttpRequest();
                 xhr.open("POST", "delete_cart.php", true);
                 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -142,17 +146,20 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 };
                 xhr.send("name=" + encodeURIComponent(name));
-      
-            }
-        
+            } 
+        });
+    });
+
+    document.querySelectorAll(".edit-btn").forEach(function(button) {
+        button.addEventListener("click", function() {
+            var name = this.getAttribute("data-name");
+            // Redirect to the edit page passing the item name as a parameter
+            window.location.href = "edit_cart.php?name=" + encodeURIComponent(name);
         });
     });
 });
 
 </script>
-
-
-
 
 </body>
 </html>

@@ -20,7 +20,7 @@
             <div class="frist-section">
                 
                 <li id="icons"><a href="./index.html"><img src="./icons/home.svg" alt="Home"></a></li>
-                <li id="icons"> <img src="./icons/cart.svg" alt="cart"> </li>
+                <li id="icons"> <img  onclick="window.location.href='./backend/display_cart.php';"src="./icons/cart.svg" alt="cart"> </li>
                 <li><a href="">Sign in</a></li>
                 <li><a href="">Sign up</a></li>
 
@@ -126,18 +126,11 @@
                         <label for="color">select color</label>
                         <select name="color">
                             <option selected="selected">black</option>
-                            
-                            
 							<option>pink</option>
 							<option>red</option>
-                        
-                            
-							
+        
 							<option>white</option>
                             <option>yellow</option>
-							
-                           
-                          
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
@@ -193,7 +186,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button  onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -261,7 +254,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button   onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -329,7 +322,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button  onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -394,7 +387,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button  onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -429,6 +422,9 @@
     }
     function changeImage5(src) {
         document.getElementById('main-image5').src = src;
+    }
+    function message() {
+        alert("add successfully");
     }
 </script>
 
