@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  gap: 30px;
+  gap: 15px;
 }
 
 .frist-section li {
@@ -21,6 +21,11 @@
 
 .search {
   padding-right: 170px;
+}
+
+.picture img {
+  width: 50%;
+  height: 50%;
 }
 
 #icons img {
@@ -65,4 +70,51 @@
 .category-container {
   display: flex;
   justify-content: center;
+}
+
+.picture {
+  width: 30%;
+}
+
+.chk {
+  color: white;
+  margin-left: 50px;
+  background-color: black;
+  padding: 20px;
+}
+
+.display {
+  margin-left: 20%;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 767px) {
+  .display {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .picture {
+    margin-left: 20px;
+    height: 50%;
+  }
+
+  .picture img {
+    width: 200px;
+  }
+
+  .chk {
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+
+  .frist-section {
+    overflow: hidden;
+    gap: 10px;
+  }
+
+  #logo {
+    gap: 0%;
+  }
 }
