@@ -19,8 +19,8 @@
             </div>
             <div class="frist-section">
                
-                <li id="icons"><img src="./icons/home.svg" alt="Home"></li>
-                <li id="icons"> <img src="./icons/cart.svg" alt="cart"> </li>
+                <li id="icons"><a href="./index1.html"><img src="./icons/home.svg" alt="Home"></li></a> 
+                <li id="icons"> <img onclick="window.location.href='./backend/display_cart.php';" src="./icons/cart.svg" alt="cart"> </li>
                 <li><a href="">Sign in</a></li>
                 <li><a href="">Sign up</a></li>
 
@@ -119,7 +119,7 @@
 
                         <input type="hidden" value="women" name="category">
                         <input type="hidden" value="Batwing" name="name" readonly size="50" class="txt"><h1>Batwing</h1>
-                        <input type="hidden" value="125Bir" name="price" readonly><h1>125 birr</h1>
+                        <input type="hidden" value="500Bir" name="price" readonly><h1>125 birr</h1>
                         <label for="size">size</label>
                         <select  name="size">
                             <option selected="selected">medium</option>
@@ -142,7 +142,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button  onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -176,7 +176,7 @@
 
                         <input type="hidden" value="women" name="category">
                         <input type="hidden" value="Knitwear" name="name" readonly size ><h1>Knitwear</h1>
-                        <input type="hidden" value="125Bir" name="price" readonly><h1>125 birr</h1>
+                        <input type="hidden" value="600Bir" name="price" readonly><h1>125 birr</h1>
                         <label for="size">size</label>
                         <select name="size">
                             <option selected="selected">medium</option>
@@ -198,7 +198,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button  onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
                    </div>
                 
@@ -236,7 +236,7 @@
 
                         <input type="hidden" value="women" name="category">
                         <input type="hidden" value="Stretch Plain" name="name" readonly size ><h1>Stretch Plain</h1>
-                        <input type="hidden" value="125Bir" name="price" readonly><h1>125 birr</h1>
+                        <input type="hidden" value="550Bir" name="price" readonly><h1>125 birr</h1>
                         <label for="size">size</label>
                         <select name="size">
                             <option selected="selected">medium</option>
@@ -258,7 +258,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button  onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
                    </div> 
@@ -309,7 +309,7 @@
 
                         <input type="hidden" value="women" name="category">
                         <input type="hidden" value="Plain Jumper" name="name" readonly size ><h1>Plain Jumper</h1>
-                        <input type="hidden" value="125Bir" name="price" readonly><h1>125 birr</h1>
+                        <input type="hidden" value="700Bir" name="price" readonly><h1>125 birr</h1>
                         <label for="size">size</label>
                         <select name="size">
                             <option selected="selected">medium</option>
@@ -334,7 +334,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button  onclick="message()"class="btn" type="submit">add to cart</button>
                     </form>
 
                    </div> 
@@ -379,7 +379,7 @@
 
                         <input type="hidden" value="women" name="category">
                         <input type="hidden" value="Batwing sleeve" name="name" readonly size ><h1>Batwing sleeve</h1>
-                        <input type="hidden" value="125Bir" name="price" readonly><h1>125 birr</h1>
+                        <input type="hidden" value="250Bir" name="price" readonly><h1>125 birr</h1>
                         <label for="size">size</label>
                         <select name="size">
                             <option selected="selected">medium</option>
@@ -403,7 +403,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button  onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
                    </div> 
@@ -412,7 +412,16 @@
          
     </div>
 </body>
-<script  src="./index.js">
+<script >
+    const hamMenu = document.querySelector('.ham-menu');
+        const offScreenMenu = document.querySelector('.off-screen-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamMenu.addEventListener('click', () => {
+            hamMenu.classList.toggle('active');
+            offScreenMenu.classList.toggle('active');
+            navMenu.classList.toggle('hidden');
+        });
     function changeImage(src) {
         document.getElementById('main-image').src = src;
     }

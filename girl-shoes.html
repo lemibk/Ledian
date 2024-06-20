@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="kids-all.css">
     <title>ledian</title>
     <link rel="icon" href="./icons/wardrobe.png">
-    <script src="./index.js"></script>
+    
 </head>
 
 <body>
@@ -18,9 +18,9 @@
             Ledian
         </div>
         <div class="frist-section">
-            <li class="search"><a href="">search</a></li>
-            <li id="icons"><a href="./index.html"><img src="./icons/home.svg" alt="Home"></li>
-            <li id="icons"> <img src="./icons/cart.svg" alt="cart"> </li>
+           
+            <li id="icons"><a href="./index1.html"><img src="./icons/home.svg" alt="Home"></li>
+            <li id="icons"> <img onclick="window.location.href='./backend/display_cart.php';" src="./icons/cart.svg" alt="cart"> </li>
             <li><a href="">Sign in</a></li>
             <li><a href="">Sign up</a></li>
 
@@ -37,45 +37,67 @@
             <a href="./Kids.html">Kids</a>
         </div>
     </div>
-
-    <div class="kid">
-        <div>
-            <div class="kidlist">
-                <div class=" main-list">
-                    <a href="./KidBoys.html">Boys'</a>
-                </div>
-                <div class=" main-list" id="kid-select">
-                    <a href="./KidGirl.html">Girls'</a>
-                </div>
-                <div class=" main-list">
-                    <a href="./KidNew-Born.html">New Borns'</a>
-                </div>
+    <div class="category-container">
+    
+        <div class="category-container">
+            <div class="category3 ">
+                <a href="./KidBoys.html">Boys'</a>
             </div>
-
-            <div class="specificlist">
-                <h1>Girls clothes</h1>
-                <ul>
-                    <li class="tab"><a href="./girl-dress.html">Dress &nbsp;&nbsp;&nbsp;&nbsp;<img id="icon-change"
-                                src="./icons/up-arrow.svg" alt=""></a></li>
-                    <li class="tab"><a href="./girl-jacket.html">Jacket &nbsp; <img src="./icons/up-arrow.svg"
-                                alt=""></a>
-                    </li>
-
-                    <li class="tab"><a href="./girl-shoes.html"> Shoes &nbsp; <img src="./icons/up-arrow.svg"
-                                alt=""></a>
-                    </li>
-                    <li class="tab"><a href="./girl-skirt.html">Skirt&nbsp; &nbsp; &nbsp; <img
-                                src="./icons/up-arrow.svg" alt=""></a>
-                    </li>
-                    <li class="tab"><a href="./girl-sweater.html">Sweater <img src="./icons/up-arrow.svg" alt=""></a>
-                    </li>
-                    <li class="tab"><a href="./girl-T-shirt.html">T-shirt&nbsp; &nbsp; &nbsp;<img
-                                src="./icons/up-arrow.svg" alt=""></a>
-                    </li>
-                </ul>
+            <div class="category3" id="kid-select">
+                <a href="./KidGirl.html">Girls'</a>
+            </div>
+            <div class="category3">
+                <a href="./KidNew-Born.html">Infants'</a>
             </div>
         </div>
+    </div>
 
+<div class="category-container">
+
+    <div class="category-container">
+        <div class="category2 ">
+            <a href="./girl-T-shirt.html ">Shirts</a>
+        </div>
+        <div class="category2">
+            <a href="./girl-dress.html">Dress</a>
+        </div>
+        <div class="category2">
+            <a href="./girl-jacket.html">Jacket</a>
+        </div>
+        <div class="category2">
+            <a href="./girl-sweater.html">Sweater</a>
+        </div>
+        <div class="category2" id="kid-select">
+            <a href="./girl-shoes.html">Shoes</a>
+        </div>
+        <div class="category2">
+            <a href="./girl-skirt.html">Skirt</a>
+        </div>
+
+    </div>
+    <!--hum menu-->
+
+    <div class="off-screen-menu">
+        <ul class="logo">
+            <li><a href="./girl-T-shirt.html ">Shirts</a></li>
+            <li><a href="./girl-dress.html">Dress</a></li>
+            <li><a href="./girl-jacket.html">Jacket</a></li>
+            <li><a href="./girl-sweater.html">Sweater</a></li>
+            <li><a href="./girl-shoes.html">Shoes</a></li>
+            <li><a href="./girl-skirt.html">Skirt</a></li>
+        </ul>
+    </div>
+
+    <nav>
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</div>
+    <div class="kid">
+        
         <div class="main">
             <div class="product-container">
                 <div class="product">
@@ -95,10 +117,10 @@
                         <select name="size">
                             <option selected="selected">medium</option>
 
-                            <option>large</option>
-                            <option>Small</option>
-                            <option>XL</option>
-                            <option>XXL</option>
+                            <option>35</option>
+                            <option>25</option>
+                            <option>13</option>
+                            <option>11</option>
                         </select> <br><br>
                         <label for="color">select your choice</label>
                         <select name="color">
@@ -106,7 +128,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button  onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -132,10 +154,10 @@
                         <select name="size">
                             <option selected="selected">medium</option>
 
-                            <option>large</option>
-                            <option>Small</option>
-                            <option>XL</option>
-                            <option>XXL</option>
+                            <option>35</option>
+                            <option>25</option>
+                            <option>13</option>
+                            <option>11</option>
                         </select> <br><br>
                         <label for="color">select your choice</label>
                         <select name="color">
@@ -143,7 +165,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -168,10 +190,10 @@
                         <select name="size">
                             <option selected="selected">medium</option>
 
-                            <option>large</option>
-                            <option>Small</option>
-                            <option>XL</option>
-                            <option>XXL</option>
+                            <option>35</option>
+                            <option>25</option>
+                            <option>13</option>
+                            <option>11</option>
                         </select> <br><br>
                         <label for="color">select your choice</label>
                         <select name="color">
@@ -179,7 +201,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -203,11 +225,10 @@
                         <label for="size">size</label>
                         <select name="size">
                             <option selected="selected">medium</option>
-
-                            <option>large</option>
-                            <option>Small</option>
-                            <option>XL</option>
-                            <option>XXL</option>
+                            <option>35</option>
+                            <option>25</option>
+                            <option>13</option>
+                            <option>11</option>
                         </select> <br><br>
                         <label for="color">select your choice</label>
                         <select name="color">
@@ -215,7 +236,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -240,10 +261,10 @@
                         <select name="size">
                             <option selected="selected">medium</option>
 
-                            <option>large</option>
-                            <option>Small</option>
-                            <option>XL</option>
-                            <option>XXL</option>
+                            <option>35</option>
+                            <option>25</option>
+                            <option>13</option>
+                            <option>11</option>
                         </select> <br><br>
                         <label for="color">select your choice</label>
                         <select name="color">
@@ -251,7 +272,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -275,11 +296,10 @@
                         <label for="size">size</label>
                         <select name="size">
                             <option selected="selected">medium</option>
-
-                            <option>large</option>
-                            <option>Small</option>
-                            <option>XL</option>
-                            <option>XXL</option>
+                            <option>35</option>
+                            <option>25</option>
+                            <option>13</option>
+                            <option>11</option>
                         </select> <br><br>
                         <label for="color">select your choice</label>
                         <select name="color">
@@ -287,7 +307,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -312,10 +332,10 @@
                         <select name="size">
                             <option selected="selected">medium</option>
 
-                            <option>large</option>
-                            <option>Small</option>
-                            <option>XL</option>
-                            <option>XXL</option>
+                            <option>35</option>
+                            <option>25</option>
+                            <option>13</option>
+                            <option>11</option>
                         </select> <br><br>
                         <label for="color">select your choice</label>
                         <select name="color">
@@ -323,7 +343,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button  onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -334,5 +354,19 @@
     </div>
 
 </body>
+<script>
+    const hamMenu = document.querySelector('.ham-menu');
+    const offScreenMenu = document.querySelector('.off-screen-menu');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamMenu.addEventListener('click', () => {
+        hamMenu.classList.toggle('active');
+        offScreenMenu.classList.toggle('active');
+        navMenu.classList.toggle('hidden');
+    });
+    function message(){
+        alert("add succesfully");
+    }
+</script>
 
 </html>

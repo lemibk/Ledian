@@ -17,9 +17,9 @@
             Ledian
         </div>
         <div class="frist-section">
-           
-            <li id="icons"><a href="./index.html"></a><img src="./icons/home.svg" alt="Home"></li>
-            <li id="icons"> <img src="./icons/cart.svg" alt="cart"> </li>
+
+            <li id="icons"><a href="./index1.html"></a><img src="./icons/home.svg" alt="Home"></li>
+            <li id="icons"> <img  onclick="window.location.href='./backend/display_cart.php';" src="./icons/cart.svg" alt="cart"> </li>
             <li><a href="">Sign in</a></li>
             <li><a href="">Sign up</a></li>
 
@@ -38,22 +38,22 @@
     </div>
     <div class="category-container">
 
-		<div class="category-container">
-			<div class="category3 " id="kid-select">
-				<a href="./KidBoys.html">Boys'</a>
-			</div>
-			<div class="category3">
-				<a href="./KidGirl.html">Girls'</a>
-			</div>
-			<div class="category3">
-				<a href="./KidNew-Born.html">New Borns'</a>
-			</div>
-		</div>
-	</div>
+        <div class="category-container">
+            <div class="category3 " id="kid-select">
+                <a href="./KidBoys.html">Boys'</a>
+            </div>
+            <div class="category3">
+                <a href="./KidGirl.html">Girls'</a>
+            </div>
+            <div class="category3">
+                <a href="./KidNew-Born.html">Infants'</a>
+            </div>
+        </div>
+    </div>
     <div class="category-container">
 
         <div class="category-container">
-            <div class="category2 " >
+            <div class="category2 ">
                 <a href="./boy-T-shirt.html">Shirts</a>
             </div>
             <div class="category2">
@@ -95,7 +95,7 @@
     </div>
 
     <div class="kid">
-        
+
 
         <div class="main">
             <div class="product-container">
@@ -127,7 +127,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -164,7 +164,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -200,7 +200,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -236,7 +236,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -272,7 +272,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -308,7 +308,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -344,7 +344,7 @@
                         </select><br> <br>
                         <label for="num">Select quantity</label>
                         <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                        <button class="btn" type="submit">add to cart</button>
+                        <button onclick="message()" class="btn" type="submit">add to cart</button>
                     </form>
 
 
@@ -355,7 +355,16 @@
     </div>
 
 </body>
-<script src="./index.js">
+<script>
+    const hamMenu = document.querySelector('.ham-menu');
+    const offScreenMenu = document.querySelector('.off-screen-menu');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamMenu.addEventListener('click', () => {
+        hamMenu.classList.toggle('active');
+        offScreenMenu.classList.toggle('active');
+        navMenu.classList.toggle('hidden');
+    });
     function changeImage(src) {
         document.getElementById('main-image').src = src;
     }
@@ -370,6 +379,9 @@
     }
     function changeImage5(src) {
         document.getElementById('main-image5').src = src;
+    }
+    function message() {
+        alert("add succesfully");
     }
 </script>
 

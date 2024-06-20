@@ -17,9 +17,9 @@
                 Ledian
             </div>
             <div class="frist-section">
-                <li class="search"><a href="">search</a></li>
-                <li id="icons"><a href="./index.html"><img src="./icons/home.svg" alt="Home"></a></li>
-                <li id="icons"> <img src="./icons/cart.svg" alt="cart"> </li>
+                
+                <li id="icons"><a href="./index1.html"><img src="./icons/home.svg" alt="Home"></a></li>
+                <li id="icons"> <img onclick="window.location.href='./backend/display_cart.php';" src="./icons/cart.svg" alt="cart"> </li>
                 <li><a href="">Sign in</a></li>
                 <li><a href="">Sign up</a></li>
 
@@ -29,7 +29,7 @@
             <div class="category1">
                 <a href="./Women.html">Women</a>
             </div>
-            <div class="category1">
+            <div class="category1" id="Men-select">
                 <a href="./Men.html">Men</a>
             </div>
             <div class="category1">
@@ -148,7 +148,7 @@
                     </select><br> <br>
                     <label for="num">Select quantity</label>
                     <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                    <button class="btn" type="submit">add to cart</button>
+                    <button  onclick="message()" class="btn" type="submit">add to cart</button>
                 </form>
             
             
@@ -219,7 +219,7 @@
                 </select><br> <br>
                 <label for="num">Select quantity</label>
                 <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                <button class="btn" type="submit">add to cart</button>
+                <button  onclick="message()" class="btn" type="submit">add to cart</button>
             </form>
         
         
@@ -278,7 +278,7 @@
                 </select><br> <br>
                 <label for="num">Select quantity</label>
                 <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                <button class="btn" type="submit">add to cart</button>
+                <button  onclick="message()" class="btn" type="submit">add to cart</button>
             </form>
         
         
@@ -360,7 +360,7 @@
                 </select><br> <br>
                 <label for="num">Select quantity</label>
                 <input type="number" value="1" width="2%" name="quantity" id="num"> <br>
-                <button class="btn" type="submit">add to cart</button>
+                <button  onclick="message()" class="btn" type="submit">add to cart</button>
             </form>
         
         
@@ -376,6 +376,15 @@
     </div>
 </body>
 <script>
+    const hamMenu = document.querySelector('.ham-menu');
+        const offScreenMenu = document.querySelector('.off-screen-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamMenu.addEventListener('click', () => {
+            hamMenu.classList.toggle('active');
+            offScreenMenu.classList.toggle('active');
+            navMenu.classList.toggle('hidden');
+        });
     function changeImage(src) {
         document.getElementById('main-image').src = src;
     }
@@ -388,7 +397,9 @@
     function changeImage4(src) {
         document.getElementById('main-image4').src = src;
     }
-
+    function message() {
+        alert("add successfully");
+    }
 
 </script>
 
