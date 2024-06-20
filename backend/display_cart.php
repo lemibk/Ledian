@@ -122,7 +122,7 @@ $total_price = $total_row["total_price"] ? $total_row["total_price"] : 0;
     </div>
 </div>
 
-<button onclick="window.location.href='../index.html';">Back</button>
+<button onclick="window.location.href='../index1.html';">Back</button>
 
 <script>
 
