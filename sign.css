@@ -55,3 +55,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#transform {
+  text-transform: lowercase;
+}

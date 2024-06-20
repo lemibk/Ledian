@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="kids-all.css">
     <title>ledian</title>
-    <script src="./index.js"></script>
+    <link rel="icon" href="./icons/wardrobe.png">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
             Ledian
         </div>
         <div class="frist-section">
-            <li class="search"><a href="">search</a></li>
+            
             <li id="icons"><a href="./index.html"></a><img src="./icons/home.svg" alt="Home"></li>
             <li id="icons"> <img src="./icons/cart.svg" alt="cart"> </li>
             <li><a href="">Sign in</a></li>
@@ -36,45 +36,66 @@
             <a href="./Kids.html">Kids</a>
         </div>
     </div>
+    <div class="category-container">
 
-    <div class="kid">
-        <div>
-            <div class="kidlist">
-                <div class=" main-list" id="kid-select">
-                    <a href="./KidBoys.html">Boys'</a>
-                </div>
-                <div class=" main-list">
-                    <a href="./KidGirl.html">Girls'</a>
-                </div>
-                <div class=" main-list">
-                    <a href="./KidNew-Born.html">New Borns'</a>
-                </div>
+		<div class="category-container">
+			<div class="category3 " id="kid-select">
+				<a href="./KidBoys.html">Boys'</a>
+			</div>
+			<div class="category3">
+				<a href="./KidGirl.html">Girls'</a>
+			</div>
+			<div class="category3">
+				<a href="./KidNew-Born.html">New Borns'</a>
+			</div>
+		</div>
+	</div>
+    <div class="category-container">
+
+        <div class="category-container">
+            <div class="category2 " >
+                <a href="./boy-T-shirt.html">Shirts</a>
             </div>
-
-            <div class="specificlist">
-                <h1>Boys clothes</h1>
-                <ul>
-                    <li class="tab"><a href="./boy-T-shirt.html">T-shirt &nbsp;&nbsp;&nbsp;&nbsp;<img id="icon-change"
-                                src="./icons/up-arrow.svg" alt=""></a></li>
-                    <li class="tab"><a href="./boy-trouser.html">Trousers &nbsp; <img src="./icons/up-arrow.svg"
-                                alt=""></a>
-                    </li>
-
-                    <li class="tab"><a href="./boy-Sweater.html"> Sweater &nbsp; <img src="./icons/up-arrow.svg"
-                                alt=""></a>
-                    </li>
-                    <li class="tab"><a href="./boy-jacket.html">Jacket &nbsp; &nbsp; &nbsp; <img
-                                src="./icons/up-arrow.svg" alt=""></a>
-                    </li>
-                    <li class="tab"><a href="./boy-shorts.html">Shorts &nbsp; &nbsp; &nbsp; <img
-                                src="./icons/up-arrow.svg" alt=""></a>
-                    </li>
-                    <li class="tab"><a href="./boy-shoes.html">Shoes &nbsp; &nbsp; &nbsp;<img src="./icons/up-arrow.svg"
-                                alt=""></a>
-                    </li>
-                </ul>
+            <div class="category2" id="kid-select">
+                <a href="./boy-trouser.html">Trousers</a>
+            </div>
+            <div class="category2" >
+                <a href="./boy-jacket.html">Jacket</a>
+            </div>
+            <div class="category2">
+                <a href="./boy-Sweater.html">Sweater</a>
+            </div>
+            <div class="category2">
+                <a href="./boy-shorts.html">Shorts</a>
+            </div>
+            <div class="category2">
+                <a href="./boy-shoes.html">Shoes</a>
             </div>
         </div>
+        <!--hum menu-->
+
+        <div class="off-screen-menu">
+            <ul class="logo">
+                <li><a href="./boy-T-shirt.html">Shirts</a></li>
+                <li><a href="./boy-trouser.html">Trousers</a></li>
+                <li><a href="./boy-jacket.html">Jacket</a></li>
+                <li><a href="./boy-Sweater.html">Sweater</a></li>
+                <li><a href="./boy-shorts.html">Shorts</a></li>
+                <li><a href="./boy-shoes.html">Shoes</a></li>
+            </ul>
+        </div>
+
+        <nav>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+
+    <div class="kid">
+        
 
         <div class="main">
             <div class="product-container">
@@ -407,5 +428,22 @@
         </div>
     </div>
 </body>
+<script src="./index.js">
+    function changeImage(src) {
+        document.getElementById('main-image').src = src;
+    }
+    function changeImage2(src) {
+        document.getElementById('main-image2').src = src;
+    }
+    function changeImage3(src) {
+        document.getElementById('main-image3').src = src;
+    }
+    function changeImage4(src) {
+        document.getElementById('main-image4').src = src;
+    }
+    function changeImage5(src) {
+        document.getElementById('main-image5').src = src;
+    }
+</script>
 
 </html>

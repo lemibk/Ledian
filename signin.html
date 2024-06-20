@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="sign.css">
+    <link rel="icon" href="./icons/wardrobe.png">
 </head>
 
 <body>
@@ -17,11 +18,11 @@
                 We wish you a happy exprerience <br>
                 and find your heart desire with Ledian <br>
             </p>
-            <button class="the-buttons">Don't Have an account? Sign Up.</button>
+            <button class="the-buttons" onclick="window.location.href='signup.html';">Don't Have an account? Sign Up.</button>
         </div>
 
 
-        <form class="forms" action="./backend/signup.php" method="post">
+        <form class="forms" action="./backend/login.php" method="post">
             <div class="white">
                 <h1>Sign In</h1>
                 <input type="text" class="text-input" name="username" placeholder="Enter your username" required>

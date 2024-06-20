@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="T-shirt.css">
     <title>ledian</title>
-    <script src="./index.js"></script>
+    <link rel="icon" href="./icons/wardrobe.png">
     <script src="./backend/selected.js"></script>
 </head>
 
@@ -18,7 +18,7 @@
                 Ledian
             </div>
             <div class="frist-section">
-                <li class="search"><a href="">search</a></li>
+               
                 <li id="icons"><img src="./icons/home.svg" alt="Home"></li>
                 <li id="icons"> <img src="./icons/cart.svg" alt="cart"> </li>
                 <li><a href="">Sign in</a></li>
@@ -38,27 +38,55 @@
             </div>
         </div>
     </section>
-    <div class="view">
-        <div class="Women">
-            <ul>
-                <h1>Women clothes</h1>
-                <li class="tab"><a href="./T-shirt.html">T-shirt &nbsp;&nbsp;&nbsp;&nbsp;<img id="icon-change"
-                            src="./icons/down-arrow.svg" alt=""></a></li>
-                <li class="tab"><a href="./womens-trousers.html">Trousers &nbsp; <img src="./icons/up-arrow.svg"
-                            alt=""></a></li>
-                <li class="tab"><a href="./womens-jacket.html">Jacket &nbsp; &nbsp; &nbsp; <img
-                            src="./icons/up-arrow.svg" alt=""></a></li>
-                <li class="tab"><a href="./womens-skirt.html">skirt &nbsp; &nbsp; &nbsp; &nbsp; <img
-                            src="./icons/up-arrow.svg" alt=""></a></li>
-                <li class="tab"><a href="./womens-dress.html">dress &nbsp; &nbsp; &nbsp; <img src="./icons/up-arrow.svg"
-                            alt=""></a></li>
-                <li class="tab"><a href="./womens-hijab.html">Hijab &nbsp; &nbsp; &nbsp; <img src="./icons/up-arrow.svg"
-                            alt=""></a></li>
-                <li class="tab"><a href="./womens-shoes.html">Shoes &nbsp; &nbsp; &nbsp;<img src="./icons/up-arrow.svg"
-                            alt=""></a></li>
-
+    <div class="category-container">
+    
+        <div class="category-container">
+            <div class="category2 " id="Men-select">
+                <a href="./T-shirt.html">Shirts</a>
+            </div>
+            <div class="category2">
+                <a href="./womens-skirt.html">Skirt</a>
+            </div>
+            <div class="category2">
+                <a href="./womens-dress.html">Dress</a>
+            </div>
+            <div class="category2">
+                <a href="./womens-trousers.html">Throusr</a>
+            </div>
+            <div class="category2">
+                <a href="./womens-jacket.html">Jacket</a>
+            </div>
+            <div class="category2">
+                <a href="./womens-hijab.html">Hijab</a>
+            </div>
+            <div class="category2">
+                <a href="./womens-shoes.html">Shoes</a>
+            </div>
+        </div>
+        <!--hum menu-->
+    
+        <div class="off-screen-menu">
+            <ul class="logo">
+                <li><a href="./T-shirt.html">Shirts</a></li>
+                <li><a href="./womens-skirt.html">Skirt</a></li>
+                <li><a href="./womens-dress.html">Dress</a></li>
+                <li><a href="./womens-trousers.html">Trousers</a></li>
+                <li><a href="./womens-jacket.html">Jacket</a></li>
+                <li><a href="./womens-hijab.html">Hijab</a></li>
+                <li><a href="./womens-shoes.html">Shoes</a></li>
             </ul>
         </div>
+    
+        <nav>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+    <div class="view">
+        
         
         <div>
               <!--frist-->
@@ -384,7 +412,7 @@
          
     </div>
 </body>
-<script>
+<script  src="./index.js">
     function changeImage(src) {
         document.getElementById('main-image').src = src;
     }

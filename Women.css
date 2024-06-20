@@ -108,3 +108,13 @@
   text-decoration: none;
   color: #000;
 }
+
+@media (max-width: 767px) {
+  .Women {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    justify-content: center;
+    padding-left: 20%;
+  }
+}
