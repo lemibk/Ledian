@@ -1,3 +1,4 @@
+
 .frist-section-contain {
   display: flex;
   flex-direction: row;
@@ -24,7 +25,7 @@
 }
 
 .img img {
-  width: 150px;
+  width: 65%;
   height: 200px;
 }
 
@@ -82,6 +83,8 @@
 .category-container {
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: 70px;
 }
 
 .product {
@@ -191,6 +194,16 @@
     padding-left: 15px;
   }
 
+  .category1 {
+    width: 20%;
+  }
+
+  .category-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
   .product {
     display: flex;
     flex-direction: column;
@@ -210,5 +223,108 @@
     background-color: bisque;
     height: auto;
     width: 150px;
+  }
+
+  /* base styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  a:hover {
+    color: #6f86ff;
+  }
+
+  body {
+    font-family: sans-serif;
+  }
+
+  /* off-screen-menu */
+  .off-screen-menu {
+    background-color: rgb(0, 136, 255);
+    height: 100%;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: 0.3s ease;
+  }
+
+  .off-screen-menu.active {
+    right: 0;
+  }
+
+  /* nav */
+  nav {
+    padding: 1rem;
+    padding-left: 35%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* ham menu */
+  .ham-menu {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    justify-content: end;
+  }
+
+  .ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #6f86ff;
+    border-radius: 25px;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+  }
+
+  .ham-menu span:nth-child(1) {
+    top: 25%;
+  }
+
+  .ham-menu span:nth-child(3) {
+    top: 75%;
+  }
+
+  .ham-menu.active span {
+    background-color: white;
+  }
+
+  .ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .ham-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
   }
 }
